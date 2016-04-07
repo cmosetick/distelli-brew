@@ -4,15 +4,9 @@ Distelli CLI Homebrew Formula
 Mac Homebrew formula to install [Distelli CLI](https://www.distelli.com/docs/agent/installing-the-distelli-cli)
 on your system.
 
-## Installation for testing users
+# Start the Homebrew install from the my tap:
 ```
-# test users, please backup up previous install first
-mv /usr/local/bin/distelli /usr/local/bin/distelli-orig
-mv /usr/local/bin/dagent /usr/local/bin/dagent-orig
-mv /usr/local/bin/dtk-orig /usr/local/bin/dtk-orig
-
-# Start the Homebrew install
-brew tap cmosetick/distelli-cli
+brew tap cmosetick/homebrew-distelli
 brew install distelli-cli
 ```
 
@@ -30,9 +24,9 @@ distelli version
 ## How to remove
 ```
 brew remove distelli-cli
-brew untap cmosetick/distelli-cli
+brew untap cmosetick/distelli
 brew tap
-# brew tap should only show your existing taps now
+# brew tap should only show your previously existing taps now.
 ```
 
 ## Caveats
@@ -40,5 +34,5 @@ You need to have already created a free
 [Distelli account](https://www.distelli.com/login) to
 start application builds with distelli cli.
 
-### Todo
+## Todo
 * Create `dagent` and `dtk` symlinks to `distelli` binary.

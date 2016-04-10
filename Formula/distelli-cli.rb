@@ -10,10 +10,6 @@ def install
         system "mv", bin/"distelli.Darwin-x86_64-3.63.4", bin/"distelli"
 end
 
-ohai "To use distelli cli to start application builds make sure that you have
-      already created a free account on the Distelli web site:
-      https://www.distelli.com/login"
-
 test do
     system "#{bin}/distelli", "version"
   end

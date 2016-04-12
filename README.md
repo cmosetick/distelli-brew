@@ -33,6 +33,3 @@ brew tap
 You need to have already created a free
 [Distelli account](https://www.distelli.com/login) to
 start application builds with distelli cli.
-
-## Todo
-* Create `dagent` and `dtk` symlinks to `distelli` binary.
